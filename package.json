@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-didit",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Didit MCP — wraps the Didit v3 identity / compliance API (didit.me)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-34e2984d3fbb695f787cdebdb604a01f051c023120de418ba9f6949222b02be8",
-    "sourceCommit": "5749f83c0ea115fab4c0c0ef04b66b05f2507d67"
+    "sourceHash": "v1-f309defea4cbe1cc6b53f187a9f000a7c4b444480d0b9b1d01555ca00ff10d87",
+    "sourceCommit": "29fb434ca65fe0f61191f19c3502f583f5fb99d7"
   }
 }
