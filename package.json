@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-didit",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Didit MCP — wraps the Didit v3 identity / compliance API (didit.me)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-didit": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "didit"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-didit.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/didit",
   "pipeworx": {
-    "sourceHash": "v1-f309defea4cbe1cc6b53f187a9f000a7c4b444480d0b9b1d01555ca00ff10d87",
-    "sourceCommit": "29fb434ca65fe0f61191f19c3502f583f5fb99d7"
+    "mode": "gateway",
+    "slug": "didit",
+    "gatewaySlug": "didit",
+    "sourceHash": "v1-cf32408c670aacab7f329c403688c7a1423f05b994a9fe5f4141ac6041890699",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
